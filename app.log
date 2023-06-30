@@ -1,0 +1,33 @@
+Watching for file changes with StatReloader
+Internal Server Error: /admin/home/userprofile/add/
+Traceback (most recent call last):
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1804, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/venv/lib/python3.10/site-packages/django/contrib/admin/options.py", line 926, in log_addition
+    object_repr=str(obj),
+  File "/home/asel/Lessons/RestFramework/PyWebFlowQR/home/models.py", line 18, in __str__
+    return f"{self.user.first_name.title()} {self.user.last_name.title()[0]}."
+IndexError: string index out of range
+Not Found: /media/profile/WhatsApp_Image_2023-05-19_at_11.50.46.jpeg
+Not Found: /media/profile/WhatsApp_Image_2023-05-19_at_11.50.46.jpeg
+Not Found: /media/profile/WhatsApp_Image_2023-05-19_at_11.50.46.jpeg
